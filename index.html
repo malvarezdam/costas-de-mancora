@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Costas de Máncora | Cocina Peruana en Chile</title>
+<meta name="description" content="Costas de Máncora — Auténtica cocina peruana en Chile. Ceviches, tiraditos, causas y pisco sours en un ambiente cálido junto al mar.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="logo">
+      <span class="logo__icon">🌊</span>
+      <span class="logo__text">Costas de <strong>Máncora</strong></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#menu" class="nav__link">Menú</a></li>
+        <li><a href="#galeria" class="nav__link">Galería</a></li>
+        <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+        <li><a href="#ubicacion" class="nav__link">Ubicación</a></li>
+        <li><a href="#reservas" class="nav__link nav__link--cta">Reservar</a></li>
+      </ul>
+    </nav>
+
+    <a href="#reservas" class="btn btn--small btn--primary header__cta">Reservar mesa</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero__waves" aria-hidden="true">
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0,100 C240,180 480,20 720,80 C960,140 1200,40 1440,100 L1440,200 L0,200 Z"></path></svg>
+  </div>
+  <div class="container hero__inner">
+    <p class="hero__eyebrow">Cocina peruana de autor · En el corazón de Chile</p>
+    <h1 class="hero__title">El sabor del norte peruano<br> llega a tu mesa</h1>
+    <p class="hero__subtitle">Ceviches frescos, tiraditos, causas y anticuchos preparados con recetas tradicionales de Máncora, fusionados con el mejor producto del mar chileno.</p>
+    <div class="hero__actions">
+      <a href="#reservas" class="btn btn--primary">Reservar una mesa</a>
+      <a href="#menu" class="btn btn--outline">Ver la carta</a>
+    </div>
+    <div class="hero__stats">
+      <div class="stat"><span class="stat__num">+8</span><span class="stat__label">años de sazón</span></div>
+      <div class="stat"><span class="stat__num">100%</span><span class="stat__label">producto fresco</span></div>
+      <div class="stat"><span class="stat__num">4.8★</span><span class="stat__label">valoración clientes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOSOTROS ===== -->
+<section class="about" id="nosotros">
+  <div class="container about__inner">
+    <div class="about__media" aria-hidden="true">
+      <svg viewBox="0 0 400 400" class="about__illustration">
+        <circle cx="200" cy="200" r="180" class="about__circle"/>
+        <path d="M60 260 Q200 200 340 260 L340 400 L60 400 Z" class="about__sea"/>
+        <circle cx="150" cy="150" r="55" class="about__sun"/>
+        <path d="M40 300 Q120 270 200 300 T360 300" class="about__wave" fill="none"/>
+        <path d="M20 330 Q120 300 200 330 T380 330" class="about__wave about__wave--2" fill="none"/>
+      </svg>
+    </div>
+    <div class="about__content">
+      <p class="section__eyebrow">Nuestra historia</p>
+      <h2 class="section__title">De las playas de Máncora a tu ciudad</h2>
+      <p class="about__text">
+        Máncora es una caleta de pescadores en el norte del Perú, famosa por sus olas, su sol y una cocina
+        que combina el pescado más fresco con ají, limón y tradición. Costas de Máncora nació del deseo de traer
+        esa misma esencia a Chile: un espacio donde cada plato cuenta una historia de mar, familia y sabor.
+      </p>
+      <p class="about__text">
+        Trabajamos con pescadores y proveedores locales para garantizar frescura diaria, mientras mantenemos vivas
+        las recetas que aprendimos de nuestras abuelas en la costa peruana.
+      </p>
+      <ul class="about__list">
+        <li><span class="icon">🐟</span> Pescados y mariscos frescos del día</li>
+        <li><span class="icon">🌶️</span> Recetas tradicionales del norte peruano</li>
+        <li><span class="icon">🍹</span> Coctelería de autor con pisco e insumos peruanos</li>
+        <li><span class="icon">❤️</span> Atención cercana, como en casa</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section__head">
+      <p class="section__eyebrow">Nuestra carta</p>
+      <h2 class="section__title">Especialidades de la casa</h2>
+      <p class="section__subtitle">Una selección de nuestros platos más pedidos. Carta completa disponible en el local.</p>
+    </div>
+
+    <div class="menu__tabs" id="menuTabs">
+      <button class="menu__tab is-active" data-cat="entradas">Entradas &amp; Ceviches</button>
+      <button class="menu__tab" data-cat="fondos">Fondos</button>
+      <button class="menu__tab" data-cat="bebidas">Bebidas &amp; Cocteles</button>
+      <button class="menu__tab" data-cat="postres">Postres</button>
+    </div>
+
+    <div class="menu__grid" id="menuGrid">
+
+      <!-- Entradas -->
+      <article class="dish" data-cat="entradas">
+        <div class="dish__icon">🐠</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Ceviche Clásico Mancoreño</h3><span class="dish__price">$9.900</span></div>
+          <p>Pescado blanco marinado en limón, ají limo, cebolla morada y camote. El plato bandera de la casa.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="entradas">
+        <div class="dish__icon">🍤</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Tiradito a la Crema de Ají Amarillo</h3><span class="dish__price">$10.500</span></div>
+          <p>Finos cortes de pescado bañados en crema de ají amarillo, toque cítrico y cilantro.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="entradas">
+        <div class="dish__icon">🥔</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Causa Limeña de Pollo</h3><span class="dish__price">$7.900</span></div>
+          <p>Papa amarilla sazonada con ají amarillo y limón, rellena de pollo y palta.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="entradas">
+        <div class="dish__icon">🦐</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Chicharrón de Pescado</h3><span class="dish__price">$9.500</span></div>
+          <p>Crocante pescado frito acompañado de yuca, salsa criolla y ají tártaro.</p>
+        </div>
+      </article>
+
+      <!-- Fondos -->
+      <article class="dish" data-cat="fondos" style="display:none">
+        <div class="dish__icon">🍚</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Arroz con Mariscos</h3><span class="dish__price">$12.900</span></div>
+          <p>Arroz al wok con mariscos frescos, cilantro y un toque de ají panca.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="fondos" style="display:none">
+        <div class="dish__icon">🥩</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Lomo Saltado</h3><span class="dish__price">$11.500</span></div>
+          <p>Salteado de lomo de res, cebolla, tomate y papas fritas, con arroz blanco.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="fondos" style="display:none">
+        <div class="dish__icon">🍗</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Ají de Gallina</h3><span class="dish__price">$10.900</span></div>
+          <p>Pollo deshilachado en crema de ají amarillo y nueces, acompañado de arroz y papa.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="fondos" style="display:none">
+        <div class="dish__icon">🍢</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Anticuchos de Corazón</h3><span class="dish__price">$8.900</span></div>
+          <p>Brochetas marinadas a la parrilla con papas doradas y choclo.</p>
+        </div>
+      </article>
+
+      <!-- Bebidas -->
+      <article class="dish" data-cat="bebidas" style="display:none">
+        <div class="dish__icon">🍸</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Pisco Sour Clásico</h3><span class="dish__price">$5.900</span></div>
+          <p>Pisco peruano, limón, jarabe de goma, clara de huevo y amargo de angostura.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="bebidas" style="display:none">
+        <div class="dish__icon">🍹</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Maracuyá Sour</h3><span class="dish__price">$6.200</span></div>
+          <p>Nuestra versión tropical del clásico, con pulpa de maracuyá fresca.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="bebidas" style="display:none">
+        <div class="dish__icon">🥤</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Chicha Morada</h3><span class="dish__price">$3.500</span></div>
+          <p>Refresco tradicional de maíz morado con piña, canela y clavo de olor.</p>
+        </div>
+      </article>
+
+      <!-- Postres -->
+      <article class="dish" data-cat="postres" style="display:none">
+        <div class="dish__icon">🍮</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Suspiro a la Limeña</h3><span class="dish__price">$4.900</span></div>
+          <p>Manjar blanco cremoso coronado con merengue al oporto.</p>
+        </div>
+      </article>
+      <article class="dish" data-cat="postres" style="display:none">
+        <div class="dish__icon">🍰</div>
+        <div class="dish__body">
+          <div class="dish__top"><h3>Mazamorra Morada</h3><span class="dish__price">$4.200</span></div>
+          <p>Postre tradicional de maíz morado con frutas y un toque de canela.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== POR QUÉ ELEGIRNOS ===== -->
+<section class="features">
+  <div class="container features__grid">
+    <div class="feature">
+      <div class="feature__icon">🎣</div>
+      <h3>Producto del día</h3>
+      <p>Compramos pescados y mariscos frescos cada mañana para asegurar la mejor calidad en cada plato.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">📜</div>
+      <h3>Recetas tradicionales</h3>
+      <p>Preparaciones fieles a la cocina norteña peruana, transmitidas de generación en generación.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">🏠</div>
+      <h3>Ambiente acogedor</h3>
+      <p>Un espacio cálido decorado con la esencia costera de Máncora, ideal para compartir en familia.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">🛵</div>
+      <h3>Delivery y take away</h3>
+      <p>Lleva nuestros sabores a tu casa u oficina a través de nuestros canales de despacho.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIA ===== -->
+<section class="gallery" id="galeria">
+  <div class="container">
+    <div class="section__head">
+      <p class="section__eyebrow">Galería</p>
+      <h2 class="section__title">Un poco de nuestro mundo</h2>
+      <p class="section__subtitle">Fotos referenciales — reemplaza estos espacios por fotografías reales del local y los platos.</p>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--big"><span>🍽️ Salón principal</span></div>
+      <div class="gallery__item"><span>🐟 Ceviche del día</span></div>
+      <div class="gallery__item"><span>🍹 Barra de cocteles</span></div>
+      <div class="gallery__item"><span>👩‍🍳 Nuestra cocina</span></div>
+      <div class="gallery__item gallery__item--big"><span>🌅 Terraza al atardecer</span></div>
+      <div class="gallery__item"><span>🥘 Arroz con mariscos</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIOS ===== -->
+<section class="testimonials" id="testimonios">
+  <div class="container">
+    <div class="section__head">
+      <p class="section__eyebrow">Testimonios</p>
+      <h2 class="section__title">Lo que dicen nuestros comensales</h2>
+    </div>
+    <div class="testimonials__grid">
+      <blockquote class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"El ceviche es idéntico al que probé en Perú. Un lugar que se nota que ama lo que hace."</p>
+        <footer>— Javiera R.</footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"Excelente atención y sabores increíbles. El pisco sour es de otro nivel."</p>
+        <footer>— Matías G.</footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"Ambiente cálido, ideal para ir en familia. Volveremos seguro."</p>
+        <footer>— Fernanda P.</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UBICACION ===== -->
+<section class="location" id="ubicacion">
+  <div class="container location__inner">
+    <div class="location__info">
+      <p class="section__eyebrow">Visítanos</p>
+      <h2 class="section__title">Ubicación y horarios</h2>
+
+      <ul class="info__list">
+        <li>
+          <span class="icon">📍</span>
+          <div>
+            <strong>Dirección</strong>
+            <p>Av. Costanera 1234, Local 2 — [Completar comuna, ciudad]</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🕒</span>
+          <div>
+            <strong>Horarios</strong>
+            <p>Martes a domingo: 12:30 – 16:00 y 19:30 – 23:00<br>Lunes cerrado</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">📞</span>
+          <div>
+            <strong>Teléfono / WhatsApp</strong>
+            <p><a href="tel:+56900000000">+56 9 0000 0000</a></p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">✉️</span>
+          <div>
+            <strong>Correo</strong>
+            <p><a href="mailto:contacto@costasdemancora.cl">contacto@costasdemancora.cl</a></p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="social">
+        <a href="#" aria-label="Instagram" class="social__link">Instagram</a>
+        <a href="#" aria-label="Facebook" class="social__link">Facebook</a>
+        <a href="#" aria-label="TikTok" class="social__link">TikTok</a>
+      </div>
+    </div>
+
+    <div class="location__map">
+      <iframe
+        title="Mapa Costas de Máncora"
+        src="https://maps.google.com/maps?q=Vi%C3%B1a%20del%20Mar%2C%20Chile&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVAS ===== -->
+<section class="reservations" id="reservas">
+  <div class="container reservations__inner">
+    <div class="reservations__text">
+      <p class="section__eyebrow">Reservas</p>
+      <h2 class="section__title">Reserva tu mesa</h2>
+      <p>Completa el formulario y te confirmaremos por WhatsApp a la brevedad. También puedes escribirnos directamente.</p>
+      <a class="btn btn--whatsapp" href="https://wa.me/56900000000?text=Hola%2C%20quisiera%20reservar%20una%20mesa%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener">
+        💬 Escríbenos por WhatsApp
+      </a>
+    </div>
+
+    <form class="reservation-form" id="reservationForm">
+      <div class="form__row">
+        <label>Nombre completo
+          <input type="text" name="nombre" required placeholder="Tu nombre">
+        </label>
+        <label>Teléfono
+          <input type="tel" name="telefono" required placeholder="+56 9 ...">
+        </label>
+      </div>
+      <div class="form__row">
+        <label>Fecha
+          <input type="date" name="fecha" required>
+        </label>
+        <label>Hora
+          <input type="time" name="hora" required>
+        </label>
+        <label>N° de personas
+          <input type="number" name="personas" min="1" max="30" required placeholder="2">
+        </label>
+      </div>
+      <label>Comentario (opcional)
+        <textarea name="comentario" rows="3" placeholder="Alergias, celebraciones, etc."></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary btn--full">Solicitar reserva</button>
+      <p class="form__hint" id="formHint"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="logo__icon">🌊</span>
+      <span class="logo__text">Costas de <strong>Máncora</strong></span>
+      <p>Cocina peruana con alma costeña, en el corazón de Chile.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navegación</h4>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#menu">Menú</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <a href="tel:+56900000000">+56 9 0000 0000</a>
+      <a href="mailto:contacto@costasdemancora.cl">contacto@costasdemancora.cl</a>
+      <a href="#ubicacion">Av. Costanera 1234</a>
+    </div>
+    <div class="footer__col">
+      <h4>Síguenos</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Costas de Máncora. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Escríbenos por WhatsApp">💬</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
