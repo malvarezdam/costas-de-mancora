@@ -1,6 +1,6 @@
 # Costas de Máncora
 
-Landing page para **Costas de Máncora**, local chileno especializado en gastronomía peruana (ceviches, tiraditos, causas, anticuchos y coctelería de autor).
+Landing page para **Costas de Máncora**, restaurante peruano real ubicado en Av. Vicuña Mackenna 5343, San Joaquín, Santiago (📞 [+56 9 5881 9204](tel:+56958819204) · [@costas_de_mancora](https://www.instagram.com/costas_de_mancora/) en Instagram · 4.7★ en [Google Maps](https://www.google.com/maps/place/COSTAS+DE+M%C3%80NCORA+SAN+JOAQU%C3%8DN+CHILE/@-33.5055235,-70.6174171,17z/data=!3m1!4b1!4m6!3m5!1s0x9662d171a56185eb:0x7e54de2e7f0772de!8m2!3d-33.5055235!4d-70.6148475!16s%2Fg%2F11r89vzc68)).
 
 ## Contenido
 
@@ -24,16 +24,15 @@ Todas las fotos son reales y de licencia libre, obtenidas de Wikimedia Commons:
 | `images/gallery-kitchen.jpg` | Chefs en la cocina | Alex Proimos | CC BY 2.0 |
 | `images/gallery-arroz.jpg` | Arroz marinero con patacones y limón | Caldobasico | CC BY-SA 4.0 |
 
+## Datos reales ya cargados
+
+Dirección, teléfono/WhatsApp, mapa embebido, Instagram y Facebook corresponden al negocio real (obtenidos de su ficha de Google Maps e Instagram el 23-08-2026). La sección de testimonios se reemplazó por la valoración real de Google (4.7★) con enlace a las reseñas reales, en vez de citas inventadas — no correspondía dejar testimonios ficticios en el sitio de un negocio existente.
+
 ## Pendiente por completar
 
-Antes de publicar como sitio definitivo del local, reemplazar los datos de ejemplo por los reales:
-
-- Dirección y comuna en la sección **Ubicación** (`index.html`) y el mapa (actualmente un recuadro placeholder).
-- Teléfono / WhatsApp (aparece en varios lugares, incluido `js/script.js` → `WHATSAPP_NUMBER`).
-- Correo de contacto.
-- Redes sociales (Instagram, Facebook, TikTok).
-- Fotografías propias del local, si se prefieren por sobre las genéricas actuales.
-- Precios y platos del menú, si difieren de los propuestos.
+- Correo de contacto: no se encontró uno público; el sitio usa WhatsApp e Instagram como canales de contacto.
+- Fotografías propias del local: las actuales son genéricas de licencia libre (ver créditos abajo); lo ideal es reemplazarlas por fotos reales del local y los platos.
+- Precios y platos del menú: son una propuesta; falta confirmarlos con el local.
 - El logo es un ícono genérico ola+sol; si el local ya tiene un logo real, reemplazar el `<svg class="brandmark">` por ese logo (imagen o SVG).
 
 ## Publicar con GitHub Pages

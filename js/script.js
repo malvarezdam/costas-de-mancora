@@ -72,7 +72,7 @@ menuTabs.forEach(tab => {
 });
 
 // ===== Reservation form -> WhatsApp =====
-const WHATSAPP_NUMBER = '56900000000'; // TODO: reemplazar por el número real del local
+const WHATSAPP_NUMBER = '56958819204';
 
 const reservationForm = document.getElementById('reservationForm');
 const formHint = document.getElementById('formHint');
