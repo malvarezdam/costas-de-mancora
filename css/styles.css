@@ -118,7 +118,13 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; color: var(
 }
 .header.is-scrolled .logo,
 .header:not(.is-scrolled) .logo { color: var(--color-ocean-dark); }
-.logo__icon { font-size: 1.4rem; }
+.brandmark { width: 38px; height: 38px; flex-shrink: 0; }
+.brandmark__ring { fill: var(--color-cream); stroke: var(--color-ocean-dark); stroke-width: 2; }
+.brandmark__sun { fill: var(--color-primary); }
+.brandmark__wave1 { fill: none; stroke: var(--color-ocean); stroke-width: 2.5; stroke-linecap: round; }
+.brandmark__wave2 { fill: none; stroke: var(--color-gold); stroke-width: 2.5; stroke-linecap: round; opacity: 0.85; }
+.footer__brand .brandmark { width: 46px; height: 46px; }
+.footer__brand .brandmark__ring { fill: var(--color-ocean-dark); stroke: var(--color-gold); }
 .logo__text strong { color: var(--color-primary); }
 
 .nav__list {
@@ -170,7 +176,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; color: var(
   min-height: 92vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(160deg, var(--color-ocean) 0%, var(--color-ocean-dark) 55%, #072530 100%);
+  background:
+    linear-gradient(160deg, rgba(14,76,99,0.88) 0%, rgba(9,53,69,0.92) 55%, rgba(7,37,48,0.95) 100%),
+    url("../images/hero-mancora.jpg") center 65%/cover no-repeat;
   color: #fff;
   padding-top: 120px;
   overflow: hidden;
@@ -252,12 +260,16 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; color: var(
   gap: 64px;
   align-items: center;
 }
-.about__illustration { width: 100%; max-width: 380px; }
-.about__circle { fill: var(--color-bg-alt); }
-.about__sun { fill: var(--color-gold); opacity: 0.9; }
-.about__sea { fill: var(--color-ocean); opacity: 0.9; }
-.about__wave { stroke: var(--color-cream); stroke-width: 6; opacity: 0.5; }
-.about__wave--2 { stroke-width: 4; opacity: 0.35; }
+.about__media { display: flex; }
+.about__photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 6px solid var(--color-cream);
+  outline: 2px solid var(--color-line);
+}
 
 .about__text { color: var(--color-ink-soft); margin-bottom: 16px; }
 .about__list { margin-top: 24px; display: grid; gap: 12px; }
@@ -314,6 +326,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; color: var(
   display: flex; align-items: center; justify-content: center;
   font-size: 1.6rem;
 }
+.dish__icon--photo { background-size: cover; background-position: center; }
 .dish__top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 6px; }
 .dish__top h3 { font-size: 1.05rem; }
 .dish__price { color: var(--color-primary); font-weight: 700; white-space: nowrap; }
@@ -350,24 +363,26 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; color: var(
 }
 .gallery__item {
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, var(--color-ocean), var(--color-ocean-dark));
-  display: flex; align-items: center; justify-content: center;
-  color: rgba(255,255,255,0.9);
-  font-weight: 600;
-  text-align: center;
-  padding: 12px;
   position: relative;
   overflow: hidden;
 }
-.gallery__item::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(232,169,60,0.35), transparent 60%);
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
-.gallery__item span { position: relative; z-index: 1; }
-.gallery__item:nth-child(2) { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); }
-.gallery__item:nth-child(3) { background: linear-gradient(135deg, var(--color-gold), #c9822a); }
-.gallery__item:nth-child(6) { background: linear-gradient(135deg, var(--color-primary-dark), var(--color-ocean-dark)); }
+.gallery__item:hover img { transform: scale(1.06); }
+.gallery__item span {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 16px 14px 12px;
+  background: linear-gradient(to top, rgba(9,53,69,0.88), transparent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 .gallery__item--big { grid-row: span 2; grid-column: span 1; }
 
 /* ===== Testimonials ===== */
@@ -499,6 +514,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; color: var(
 .footer__col a { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
 .footer__col a:hover { color: var(--color-gold); }
 .footer__bottom { text-align: center; padding: 22px 0; font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+.footer__credits { margin-top: 6px; font-size: 0.72rem; color: rgba(255,255,255,0.35); }
 
 /* ===== Floating WhatsApp ===== */
 .floating-whatsapp {

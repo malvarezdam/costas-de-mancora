@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Costas de Máncora | Cocina Peruana en Chile</title>
 <meta name="description" content="Costas de Máncora — Auténtica cocina peruana en Chile. Ceviches, tiraditos, causas y pisco sours en un ambiente cálido junto al mar.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%230E4C63'/%3E%3Ccircle cx='24' cy='18' r='7' fill='%23E1592F'/%3E%3Cpath d='M5 30c4-4 8-4 12 0s8 4 12 0 8-4 12 0' stroke='%23FBF6EE' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M5 36c4-4 8-4 12 0s8 4 12 0 8-4 12 0' stroke='%23E8A93C' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,12 @@
 <header class="header" id="header">
   <div class="container header__inner">
     <a href="#inicio" class="logo">
-      <span class="logo__icon">🌊</span>
+      <svg class="brandmark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" class="brandmark__ring"/>
+        <circle cx="24" cy="18" r="7" class="brandmark__sun"/>
+        <path d="M6 30c4-4 8-4 12 0s8 4 12 0 8-4 12 0" class="brandmark__wave1"/>
+        <path d="M6 36c4-4 8-4 12 0s8 4 12 0 8-4 12 0" class="brandmark__wave2"/>
+      </svg>
       <span class="logo__text">Costas de <strong>Máncora</strong></span>
     </a>
 
@@ -64,14 +69,8 @@
 <!-- ===== NOSOTROS ===== -->
 <section class="about" id="nosotros">
   <div class="container about__inner">
-    <div class="about__media" aria-hidden="true">
-      <svg viewBox="0 0 400 400" class="about__illustration">
-        <circle cx="200" cy="200" r="180" class="about__circle"/>
-        <path d="M60 260 Q200 200 340 260 L340 400 L60 400 Z" class="about__sea"/>
-        <circle cx="150" cy="150" r="55" class="about__sun"/>
-        <path d="M40 300 Q120 270 200 300 T360 300" class="about__wave" fill="none"/>
-        <path d="M20 330 Q120 300 200 330 T380 330" class="about__wave about__wave--2" fill="none"/>
-      </svg>
+    <div class="about__media">
+      <img src="images/story-boats.jpg" alt="Mantención de botes de pesca artesanal en Máncora, Perú" class="about__photo" loading="lazy">
     </div>
     <div class="about__content">
       <p class="section__eyebrow">Nuestra historia</p>
@@ -115,7 +114,7 @@
 
       <!-- Entradas -->
       <article class="dish" data-cat="entradas">
-        <div class="dish__icon">🐠</div>
+        <div class="dish__icon dish__icon--photo" style="background-image:url('images/gallery-ceviche.jpg')"></div>
         <div class="dish__body">
           <div class="dish__top"><h3>Ceviche Clásico Mancoreño</h3><span class="dish__price">$9.900</span></div>
           <p>Pescado blanco marinado en limón, ají limo, cebolla morada y camote. El plato bandera de la casa.</p>
@@ -145,7 +144,7 @@
 
       <!-- Fondos -->
       <article class="dish" data-cat="fondos" style="display:none">
-        <div class="dish__icon">🍚</div>
+        <div class="dish__icon dish__icon--photo" style="background-image:url('images/gallery-arroz.jpg')"></div>
         <div class="dish__body">
           <div class="dish__top"><h3>Arroz con Mariscos</h3><span class="dish__price">$12.900</span></div>
           <p>Arroz al wok con mariscos frescos, cilantro y un toque de ají panca.</p>
@@ -175,7 +174,7 @@
 
       <!-- Bebidas -->
       <article class="dish" data-cat="bebidas" style="display:none">
-        <div class="dish__icon">🍸</div>
+        <div class="dish__icon dish__icon--photo" style="background-image:url('images/gallery-pisco.jpg')"></div>
         <div class="dish__body">
           <div class="dish__top"><h3>Pisco Sour Clásico</h3><span class="dish__price">$5.900</span></div>
           <p>Pisco peruano, limón, jarabe de goma, clara de huevo y amargo de angostura.</p>
@@ -251,12 +250,12 @@
       <p class="section__subtitle">Fotos referenciales — reemplaza estos espacios por fotografías reales del local y los platos.</p>
     </div>
     <div class="gallery__grid">
-      <div class="gallery__item gallery__item--big"><span>🍽️ Salón principal</span></div>
-      <div class="gallery__item"><span>🐟 Ceviche del día</span></div>
-      <div class="gallery__item"><span>🍹 Barra de cocteles</span></div>
-      <div class="gallery__item"><span>👩‍🍳 Nuestra cocina</span></div>
-      <div class="gallery__item gallery__item--big"><span>🌅 Terraza al atardecer</span></div>
-      <div class="gallery__item"><span>🥘 Arroz con mariscos</span></div>
+      <div class="gallery__item gallery__item--big"><img src="images/gallery-restaurant.jpg" alt="Salón de un restaurante peruano" loading="lazy"><span>🍽️ Salón principal</span></div>
+      <div class="gallery__item"><img src="images/gallery-ceviche.jpg" alt="Ceviche peruano recién preparado" loading="lazy"><span>🐟 Ceviche del día</span></div>
+      <div class="gallery__item"><img src="images/gallery-pisco.jpg" alt="Pisco sour servido en copa" loading="lazy"><span>🍹 Barra de cocteles</span></div>
+      <div class="gallery__item"><img src="images/gallery-kitchen.jpg" alt="Chefs trabajando en la cocina" loading="lazy"><span>👩‍🍳 Nuestra cocina</span></div>
+      <div class="gallery__item gallery__item--big"><img src="images/gallery-sunset.jpg" alt="Atardecer en la costa de Máncora, Perú" loading="lazy"><span>🌅 Terraza al atardecer</span></div>
+      <div class="gallery__item"><img src="images/gallery-arroz.jpg" alt="Arroz marinero con mariscos" loading="lazy"><span>🥘 Arroz con mariscos</span></div>
     </div>
   </div>
 </section>
@@ -384,7 +383,12 @@
 <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <span class="logo__icon">🌊</span>
+      <svg class="brandmark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" class="brandmark__ring"/>
+        <circle cx="24" cy="18" r="7" class="brandmark__sun"/>
+        <path d="M6 30c4-4 8-4 12 0s8 4 12 0 8-4 12 0" class="brandmark__wave1"/>
+        <path d="M6 36c4-4 8-4 12 0s8 4 12 0 8-4 12 0" class="brandmark__wave2"/>
+      </svg>
       <span class="logo__text">Costas de <strong>Máncora</strong></span>
       <p>Cocina peruana con alma costeña, en el corazón de Chile.</p>
     </div>
@@ -410,6 +414,7 @@
   </div>
   <div class="footer__bottom">
     <p>&copy; <span id="year"></span> Costas de Máncora. Todos los derechos reservados.</p>
+    <p class="footer__credits">Fotografías: Wikimedia Commons (CC0 / CC BY / CC BY-SA) — ver créditos en el README del repositorio.</p>
   </div>
 </footer>
 
