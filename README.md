@@ -22,7 +22,17 @@ Todas las fotos son reales y de licencia libre, obtenidas de Wikimedia Commons:
 | `images/gallery-pisco.jpg` | Pisco sour | Dtarazona | CC BY-SA 4.0 |
 | `images/gallery-sunset.jpg` | Atardecer en Máncora | Melissamarzo | CC BY-SA 4.0 |
 | `images/gallery-kitchen.jpg` | Chefs en la cocina | Alex Proimos | CC BY 2.0 |
-| `images/gallery-arroz.jpg` | Arroz marinero con patacones y limón | Caldobasico | CC BY-SA 4.0 |
+| `images/gallery-arroz.jpg` / plato "Arroz con Mariscos" | Arroz marinero con patacones y limón | Caldobasico | CC BY-SA 4.0 |
+| `images/dish-tiradito.jpg` | Tiradito al ají amarillo | Jorge Díaz | CC BY-SA 2.0 |
+| `images/dish-causa.jpg` | Causa limeña | Manuel González Olaechea | CC BY-SA 3.0 |
+| `images/dish-chicharron.jpg` | Chicharrón de pescado | Jorge Gobbi | CC BY 2.0 |
+| `images/dish-lomo.jpg` | Lomo Saltado, Lima, Peru | Shoestring (Wikivoyage) | CC BY-SA 4.0 |
+| `images/dish-aji-gallina.jpg` | Ají de gallina | Feralbt | CC BY-SA 3.0 |
+| `images/dish-anticuchos.jpg` | Anticucho del Perú | Manuel González Olaechea | CC BY-SA 3.0 |
+| `images/dish-maracuya.jpg` | Maracuyá sour | Larissa.PQ | CC BY-SA 4.0 |
+| `images/dish-chicha.jpg` | Chicha morada | August Dominus | CC0 |
+| `images/dish-suspiro.jpg` | Suspiro limeño | Luisfranciscopm | CC BY-SA 4.0 |
+| `images/dish-mazamorra.jpg` | Mazamorra morada | Dtarazona | Dominio público |
 
 ## Datos reales ya cargados
 
@@ -31,7 +41,7 @@ Dirección, teléfono/WhatsApp, mapa embebido, Instagram y Facebook corresponden
 ## Pendiente por completar
 
 - Correo de contacto: no se encontró uno público; el sitio usa WhatsApp e Instagram como canales de contacto.
-- Fotografías propias del local: las actuales son genéricas de licencia libre (ver créditos abajo); lo ideal es reemplazarlas por fotos reales del local y los platos.
+- Fotografías propias del local: todas las fotos (hero, galería y cada plato del menú) son genéricas de licencia libre (ver créditos arriba), no fotos del local real; lo ideal es reemplazarlas por fotos propias cuando el local las tenga.
 - Precios y platos del menú: son una propuesta; falta confirmarlos con el local.
 - El logo es un ícono genérico ola+sol; si el local ya tiene un logo real, reemplazar el `<svg class="brandmark">` por ese logo (imagen o SVG).
 
