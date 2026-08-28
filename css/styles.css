@@ -182,7 +182,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 
 /* ===== Contacto ===== */
 .contact { padding: 100px 0; background: var(--blue-deep); }
-.contact__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.contact__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 900px; margin: 0 auto; }
+.contact__grid--three { grid-template-columns: repeat(3, 1fr); }
 .contact__card {
   display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;
   padding: 32px 18px; border-radius: var(--radius); border: 1.5px solid rgba(255,255,255,0.15);
