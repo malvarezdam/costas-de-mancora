@@ -165,17 +165,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 
 /* ===== Platos ===== */
 .platos { padding: 100px 0; background: var(--cream); }
-.platos__grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 260px; gap: 18px; }
-.plato { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.platos__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.plato { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 1/1; }
 .plato img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .plato:hover img { transform: scale(1.06); }
-.plato figcaption {
-  position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 16px 14px;
-  background: linear-gradient(to top, rgba(11,40,54,0.9), transparent);
-  color: #fff; font-size: 0.88rem; font-weight: 500;
-}
-.plato:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-.plato--wide { grid-column: span 2; }
 
 /* ===== Location ===== */
 .location { padding: 100px 0; background: var(--cream-soft); }
@@ -268,9 +261,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
   .about__media { order: -1; }
   .carta__grid { grid-template-columns: 1fr; gap: 30px; }
   .contact__grid { grid-template-columns: repeat(2, 1fr); }
-  .platos__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 220px; }
-  .plato:nth-child(1) { grid-column: span 2; grid-row: span 1; }
-  .plato--wide { grid-column: span 2; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
 }
 
@@ -297,8 +287,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
   .hero__arrow { width: 40px; height: 40px; font-size: 1.3rem; }
   .hero__actions { flex-direction: column; align-items: stretch; }
   .contact__grid { grid-template-columns: 1fr; }
-  .platos__grid { grid-template-columns: 1fr; grid-auto-rows: 240px; }
-  .plato:nth-child(1), .plato--wide { grid-column: span 1; grid-row: span 1; }
+  .platos__grid { grid-template-columns: 1fr; }
   .form__row { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; text-align: center; }
   .footer__brand { align-items: center; }
