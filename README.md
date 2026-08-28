@@ -20,10 +20,10 @@ Diseño inspirado en [pescadoscapitales.cl](https://pescadoscapitales.cl/) (hero
 - Carta e ítems destacados con precios: extraídos directamente de `carta-comida.pdf` y `carta-bebidas.pdf`, entregados por el local.
 - Instagram y Facebook: cuentas reales verificadas.
 
-## Dato que falta confirmar con el local
+## Notas
 
-- **Correo de contacto**: no encontré uno público, así que el sitio usa `contacto@costasdemancora.cl` como marcador de posición (aparece en la sección Contacto, el footer y el formulario). Reemplázalo por el correo real en `index.html` (búsqueda: `contacto@costasdemancora.cl`).
-- **TikTok**: no pude confirmar que exista una cuenta de TikTok del local. El botón flotante y el enlace del footer apuntan a `https://www.tiktok.com/@costas_de_mancora` (mismo usuario que Instagram) como suposición razonable — confírmalo o corrígelo antes de publicar definitivamente.
+- El local no ofrece reserva de mesas: todos los botones "Reservar" se reemplazaron por "Escríbenos" (WhatsApp) o por el formulario de consultas/eventos.
+- Correo real: `Costasdemancora@gmail.com`. TikTok real: `https://www.tiktok.com/@costasdemancora`.
 
 ## Créditos de fotografías (costa peruana)
 

@@ -29,11 +29,11 @@
         <li><a href="#platos" class="nav__link">Platos</a></li>
         <li><a href="#ubicacion" class="nav__link">Ubicación</a></li>
         <li><a href="#contacto" class="nav__link">Contacto</a></li>
-        <li><a href="#reservar" class="nav__link nav__link--cta">Reservar</a></li>
+        <li><a href="https://wa.me/56958819204?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener" class="nav__link nav__link--cta">Escríbenos</a></li>
       </ul>
     </nav>
 
-    <a href="https://wa.me/56958819204?text=Hola%2C%20quisiera%20reservar%20una%20mesa%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener" class="btn btn--small btn--primary header__cta">Reservar</a>
+    <a href="https://wa.me/56958819204?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener" class="btn btn--small btn--primary header__cta">Escríbenos</a>
     <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -50,7 +50,7 @@
         <h1 class="hero__title">El sabor cálido<br>del norte peruano</h1>
         <p class="hero__subtitle">Recetas tradicionales del Perú, servidas con la calidez de siempre, en el corazón de San Joaquín.</p>
         <div class="hero__actions">
-          <a href="#reservar" class="btn btn--primary">Reservar mesa</a>
+          <a href="#contacto" class="btn btn--primary">Escríbenos</a>
           <a href="#carta" class="btn btn--outline">Ver la carta</a>
         </div>
       </div>
@@ -62,7 +62,7 @@
         <h1 class="hero__title">Elegancia<br>con sazón de mar</h1>
         <p class="hero__subtitle">Ingredientes frescos y una cocina cuidada que honra cada receta de la costa peruana.</p>
         <div class="hero__actions">
-          <a href="#reservar" class="btn btn--primary">Reservar mesa</a>
+          <a href="#contacto" class="btn btn--primary">Escríbenos</a>
           <a href="#platos" class="btn btn--outline">Ver platos</a>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <h1 class="hero__title">Tradición que se<br>sirve con orgullo</h1>
         <p class="hero__subtitle">La misma pasión de siempre por la buena comida, con productos frescos y sazón auténtica.</p>
         <div class="hero__actions">
-          <a href="#reservar" class="btn btn--primary">Reservar mesa</a>
+          <a href="#contacto" class="btn btn--primary">Escríbenos</a>
           <a href="#nosotros" class="btn btn--outline">Conócenos</a>
         </div>
       </div>
@@ -260,10 +260,10 @@
       <h2 class="section__title">Contacto</h2>
     </div>
     <div class="contact__grid">
-      <a class="contact__card" href="mailto:contacto@costasdemancora.cl">
+      <a class="contact__card" href="mailto:Costasdemancora@gmail.com">
         <span class="contact__icon">✉️</span>
         <strong>Correo</strong>
-        <span>contacto@costasdemancora.cl</span>
+        <span>Costasdemancora@gmail.com</span>
       </a>
       <a class="contact__card" href="tel:+56958819204">
         <span class="contact__icon">📞</span>
@@ -296,14 +296,14 @@
   </div>
 </section>
 
-<!-- ===== RESERVAR / CONTACTANOS FORMAL ===== -->
-<section class="reservations" id="reservar">
+<!-- ===== CONTACTANOS FORMAL ===== -->
+<section class="reservations" id="contacto-formal">
   <div class="container reservations__inner">
     <div class="reservations__text">
-      <p class="section__eyebrow">Reservas y eventos</p>
+      <p class="section__eyebrow">Consultas y eventos</p>
       <h2 class="section__title">Contáctanos</h2>
-      <p>Para reservas, celebraciones o consultas corporativas, escríbenos y te responderemos a la brevedad.</p>
-      <a class="btn btn--whatsapp" href="https://wa.me/56958819204?text=Hola%2C%20quisiera%20reservar%20una%20mesa%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener">💬 Reservar por WhatsApp</a>
+      <p>Para celebraciones, eventos corporativos o cualquier consulta, escríbenos y te responderemos a la brevedad.</p>
+      <a class="btn btn--whatsapp" href="https://wa.me/56958819204?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a>
     </div>
 
     <form class="reservation-form" id="reservationForm">
@@ -315,21 +315,13 @@
           <input type="email" name="correo" required placeholder="tu@correo.cl">
         </label>
       </div>
-      <div class="form__row">
-        <label>Fecha
-          <input type="date" name="fecha" required>
-        </label>
-        <label>Hora
-          <input type="time" name="hora" required>
-        </label>
-        <label>N° de personas
-          <input type="number" name="personas" min="1" max="60" required placeholder="2">
-        </label>
-      </div>
-      <label>Mensaje
-        <textarea name="comentario" rows="3" placeholder="Eventos corporativos, celebraciones, alergias, etc."></textarea>
+      <label>Teléfono
+        <input type="tel" name="telefono" placeholder="+56 9 ...">
       </label>
-      <button type="submit" class="btn btn--primary btn--full">Enviar solicitud</button>
+      <label>Mensaje
+        <textarea name="comentario" rows="3" placeholder="Eventos corporativos, celebraciones, consultas, etc." required></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary btn--full">Enviar consulta</button>
       <p class="form__hint" id="formHint"></p>
     </form>
   </div>
@@ -371,14 +363,14 @@
     <div class="footer__col">
       <h4>Contacto</h4>
       <a href="tel:+56958819204">+56 9 5881 9204</a>
-      <a href="mailto:contacto@costasdemancora.cl">contacto@costasdemancora.cl</a>
+      <a href="mailto:Costasdemancora@gmail.com">Costasdemancora@gmail.com</a>
       <a href="#ubicacion">Av. Vicuña Mackenna 5343, San Joaquín</a>
     </div>
     <div class="footer__col">
       <h4>Síguenos</h4>
       <a href="https://www.instagram.com/costas_de_mancora/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/people/Costas-De-Mancora/100053476695168/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.tiktok.com/@costas_de_mancora" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.tiktok.com/@costasdemancora" target="_blank" rel="noopener">TikTok</a>
     </div>
   </div>
   <div class="footer__bottom">
@@ -395,7 +387,7 @@
   <a href="https://www.instagram.com/costas_de_mancora/" target="_blank" rel="noopener" class="floating-btn floating-btn--instagram" aria-label="Instagram">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.55.22.95.47 1.37.89.42.42.67.82.89 1.37.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.55-.47.95-.89 1.37-.42.42-.82.67-1.37.89-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.68 3.68 0 0 1-1.37-.89 3.68 3.68 0 0 1-.89-1.37c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.55.47-.95.89-1.37.42-.42.82-.67 1.37-.89.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56a5.85 5.85 0 0 0-2.11 1.38A5.85 5.85 0 0 0 .65 4.12c-.3.76-.5 1.63-.56 2.91C.03 8.31.02 8.72.02 12s.01 3.69.07 4.97c.06 1.28.26 2.15.56 2.91.32.79.75 1.46 1.38 2.11.65.63 1.32 1.06 2.11 1.38.76.3 1.63.5 2.91.56 1.28.06 1.69.07 4.97.07s3.69-.01 4.97-.07c1.28-.06 2.15-.26 2.91-.56a5.85 5.85 0 0 0 2.11-1.38 5.85 5.85 0 0 0 1.38-2.11c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.97s-.01-3.69-.07-4.97c-.06-1.28-.26-2.15-.56-2.91a5.85 5.85 0 0 0-1.38-2.11A5.85 5.85 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
   </a>
-  <a href="https://www.tiktok.com/@costas_de_mancora" target="_blank" rel="noopener" class="floating-btn floating-btn--tiktok" aria-label="TikTok">
+  <a href="https://www.tiktok.com/@costasdemancora" target="_blank" rel="noopener" class="floating-btn floating-btn--tiktok" aria-label="TikTok">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-3.03-4.03h-3.1v13.94a2.6 2.6 0 1 1-2.6-2.6 2.6 2.6 0 0 1 .55.06V9.98a5.66 5.66 0 0 0-.55-.03 5.7 5.7 0 1 0 5.7 5.7V8.4a7.35 7.35 0 0 0 4.03 1.2V6.5a4.27 4.27 0 0 1-1-.68Z"/></svg>
   </a>
 </div>

@@ -102,22 +102,18 @@ reservationForm.addEventListener('submit', (e) => {
   const data = new FormData(reservationForm);
   const nombre = data.get('nombre').trim();
   const correo = data.get('correo').trim();
-  const fecha = data.get('fecha');
-  const hora = data.get('hora');
-  const personas = data.get('personas');
+  const telefono = data.get('telefono').trim();
   const comentario = data.get('comentario').trim();
 
   const mensaje =
-    `Hola, quisiera hacer una solicitud en Costas de Máncora.%0A` +
+    `Hola, quisiera hacer una consulta en Costas de Máncora.%0A` +
     `Nombre: ${encodeURIComponent(nombre)}%0A` +
-    `Correo: ${encodeURIComponent(correo)}%0A` +
-    `Fecha: ${encodeURIComponent(fecha)}%0A` +
-    `Hora: ${encodeURIComponent(hora)}%0A` +
-    `Personas: ${encodeURIComponent(personas)}` +
-    (comentario ? `%0AMensaje: ${encodeURIComponent(comentario)}` : '');
+    `Correo: ${encodeURIComponent(correo)}` +
+    (telefono ? `%0ATeléfono: ${encodeURIComponent(telefono)}` : '') +
+    `%0AMensaje: ${encodeURIComponent(comentario)}`;
 
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensaje}`;
-  formHint.textContent = 'Te estamos redirigiendo a WhatsApp para confirmar tu solicitud...';
+  formHint.textContent = 'Te estamos redirigiendo a WhatsApp para enviar tu consulta...';
   window.open(url, '_blank', 'noopener');
   reservationForm.reset();
 });
