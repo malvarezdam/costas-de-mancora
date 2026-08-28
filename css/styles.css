@@ -96,11 +96,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 .hero__slide {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  opacity: 0; visibility: hidden; transition: opacity 1s ease;
+  opacity: 0; visibility: hidden;
+  transition: opacity 1.2s ease, visibility 1.2s ease;
   display: flex; align-items: center;
 }
 .hero__slide.is-active { opacity: 1; visibility: visible; }
-.hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,40,54,0.55) 0%, rgba(11,40,54,0.55) 40%, rgba(11,40,54,0.85) 100%); }
+.hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,40,54,0.72) 0%, rgba(11,40,54,0.68) 40%, rgba(11,40,54,0.9) 100%); }
 .hero__content { position: relative; z-index: 2; max-width: 720px; color: #fff; }
 .hero__eyebrow { text-transform: uppercase; letter-spacing: 3px; font-size: 0.8rem; color: var(--gold-light); font-weight: 600; margin-bottom: 20px; }
 .hero__title { font-size: clamp(2.4rem, 5.2vw, 4rem); line-height: 1.15; color: #fff; margin-bottom: 22px; }
