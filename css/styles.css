@@ -238,7 +238,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 .footer__col a { color: rgba(255,255,255,0.75); font-size: 0.9rem; }
 .footer__col a:hover { color: var(--gold-light); }
 .footer__bottom { text-align: center; padding: 22px 0; font-size: 0.82rem; color: rgba(255,255,255,0.45); }
-.footer__credits { margin-top: 6px; font-size: 0.72rem; color: rgba(255,255,255,0.3); }
 
 /* ===== Floating buttons ===== */
 .floating-buttons { position: fixed; bottom: 24px; right: 24px; display: flex; flex-direction: column; gap: 12px; z-index: 90; }

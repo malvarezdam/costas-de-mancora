@@ -11,7 +11,7 @@ Diseño inspirado en [pescadoscapitales.cl](https://pescadoscapitales.cl/) (hero
 - `js/script.js` — Slider del hero, tabs de la carta, menú móvil, scroll reveal y formulario de contacto por WhatsApp.
 - `images/logo.png`, `images/nombre.png` — Logo y wordmark **reales** del local (provistos por el local).
 - `images/platos/` — **Fotografías reales** de platos del local (provistas por el local).
-- `images/costa/` — Fotografías simbólicas de la costa peruana (Máncora), de licencia libre — ver créditos abajo.
+- `images/costa/` — Fotografías simbólicas de la costa peruana (Máncora), de dominio público / CC0 (sin copyright, no requieren atribución).
 - `menus/carta-comida.pdf`, `menus/carta-bebidas.pdf` — Cartas **reales y completas** del local, enlazadas desde la sección "Carta" (igual que el "Carta Salón" de la página de referencia).
 
 ## Fuentes de la información
@@ -24,16 +24,6 @@ Diseño inspirado en [pescadoscapitales.cl](https://pescadoscapitales.cl/) (hero
 
 - El local no ofrece reserva de mesas: todos los botones "Reservar" se reemplazaron por "Escríbenos" (WhatsApp) o por el formulario de consultas/eventos.
 - Correo real: `Costasdemancora@gmail.com`. TikTok real: `https://www.tiktok.com/@costasdemancora`.
-
-## Créditos de fotografías (costa peruana)
-
-| Archivo | Foto | Autor | Licencia |
-|---|---|---|---|
-| `images/costa/mancora-atardecer.jpg` | Playa Máncora, atardecer | El Surquillano | CC0 |
-| `images/costa/mancora-costa.jpg` | Atardecer en Máncora | Melissamarzo | CC BY-SA 4.0 |
-| `images/costa/mancora-botes.jpg` | Mantención de botes de pesca en Máncora | Alfredobi | Dominio público |
-
-Todas obtenidas de Wikimedia Commons. Las fotos de platos (`images/platos/`) y el logo (`images/logo.png`, `images/nombre.png`) son material real del local, no de Wikimedia.
 
 ## Publicar con GitHub Pages
 
