@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Costas de Máncora | Gastronomía Peruana en San Joaquín</title>
+<meta name="description" content="Costas de Máncora — Gastronomía peruana en San Joaquín, Santiago. Ceviches, piqueos, especialidades marinas y coctelería peruana. Av. Vicuña Mackenna 5343.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="brand">
+      <img src="images/logo.png" alt="Costas de Máncora" class="brand__mark">
+      <img src="images/nombre.png" alt="Costas de Máncora" class="brand__word">
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#carta" class="nav__link">Carta</a></li>
+        <li><a href="#platos" class="nav__link">Platos</a></li>
+        <li><a href="#ubicacion" class="nav__link">Ubicación</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        <li><a href="#reservar" class="nav__link nav__link--cta">Reservar</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/56958819204?text=Hola%2C%20quisiera%20reservar%20una%20mesa%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener" class="btn btn--small btn--primary header__cta">Reservar</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="hero" id="inicio">
+  <div class="hero__slides" id="heroSlides">
+    <div class="hero__slide is-active" style="background-image:url('images/costa/mancora-atardecer.jpg')">
+      <div class="hero__scrim"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Bienvenidos a Costas de Máncora</p>
+        <h1 class="hero__title">El sabor cálido<br>del norte peruano</h1>
+        <p class="hero__subtitle">Recetas tradicionales del Perú, servidas con la calidez de siempre, en el corazón de San Joaquín.</p>
+        <div class="hero__actions">
+          <a href="#reservar" class="btn btn--primary">Reservar mesa</a>
+          <a href="#carta" class="btn btn--outline">Ver la carta</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__slide" style="background-image:url('images/costa/mancora-costa.jpg')">
+      <div class="hero__scrim"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Cocina de autor</p>
+        <h1 class="hero__title">Elegancia<br>con sazón de mar</h1>
+        <p class="hero__subtitle">Ingredientes frescos y una cocina cuidada que honra cada receta de la costa peruana.</p>
+        <div class="hero__actions">
+          <a href="#reservar" class="btn btn--primary">Reservar mesa</a>
+          <a href="#platos" class="btn btn--outline">Ver platos</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__slide" style="background-image:url('images/costa/mancora-botes.jpg')">
+      <div class="hero__scrim"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Desde la caleta hasta tu mesa</p>
+        <h1 class="hero__title">Tradición que se<br>sirve con orgullo</h1>
+        <p class="hero__subtitle">La misma pasión de siempre por la buena comida, con productos frescos y sazón auténtica.</p>
+        <div class="hero__actions">
+          <a href="#reservar" class="btn btn--primary">Reservar mesa</a>
+          <a href="#nosotros" class="btn btn--outline">Conócenos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Anterior">‹</button>
+  <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Siguiente">›</button>
+  <div class="hero__dots" id="heroDots">
+    <button class="hero__dot is-active" data-slide="0" aria-label="Diapositiva 1"></button>
+    <button class="hero__dot" data-slide="1" aria-label="Diapositiva 2"></button>
+    <button class="hero__dot" data-slide="2" aria-label="Diapositiva 3"></button>
+  </div>
+</section>
+
+<!-- ===== NOSOTROS ===== -->
+<section class="about" id="nosotros">
+  <div class="container about__inner">
+    <div class="about__content">
+      <p class="section__eyebrow">Nuestra historia</p>
+      <h2 class="section__title">Gastronomía peruana con alma costeña</h2>
+      <p class="about__text">
+        Costas de Máncora nace del amor por la cocina del norte del Perú: la frescura del pescado del día,
+        el picor justo del ají y la calidez de recibir a cada comensal como en casa. Trajimos esa esencia
+        a San Joaquín para compartir contigo una experiencia cálida, elegante y llena de tradición.
+      </p>
+      <p class="about__text">
+        Nuestra cocina fusiona los clásicos peruanos —ceviches, causas, piqueos— con técnicas de autor:
+        risottos, pastas y salteados al wok que dialogan entre Perú y el mundo, sin perder la sazón de siempre.
+      </p>
+      <ul class="about__list">
+        <li><span class="icon">🐟</span> Producto fresco, seleccionado a diario</li>
+        <li><span class="icon">🌶️</span> Recetas tradicionales del norte peruano</li>
+        <li><span class="icon">🍷</span> Coctelería de autor y buena mesa</li>
+        <li><span class="icon">❤️</span> Un servicio cálido, como en casa</li>
+      </ul>
+    </div>
+    <div class="about__media">
+      <img src="images/costa/mancora-costa.jpg" alt="Costa de Máncora, Perú" class="about__photo" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== CARTA ===== -->
+<section class="carta" id="carta">
+  <div class="container">
+    <div class="section__head section__head--light">
+      <p class="section__eyebrow">Nuestra carta</p>
+      <h2 class="section__title">Sabores de nuestra costa</h2>
+      <p class="section__subtitle">Una muestra de lo que preparamos cada día. Descarga la carta completa para ver todas las opciones.</p>
+    </div>
+
+    <div class="carta__tabs" id="cartaTabs">
+      <button class="carta__tab is-active" data-panel="comida">Comida</button>
+      <button class="carta__tab" data-panel="bebidas">Bebidas</button>
+    </div>
+
+    <div class="carta__panel is-active" data-panel="comida">
+      <div class="carta__grid">
+        <div class="carta__col">
+          <h3 class="carta__col-title">Piqueos &amp; Ceviches</h3>
+          <ul class="carta__list">
+            <li><span class="carta__name">Piqueo Frío</span><span class="carta__dots"></span><span class="carta__price">$24.900</span></li>
+            <li><span class="carta__name">Ceviche Máncora</span><span class="carta__dots"></span><span class="carta__price">$18.900</span></li>
+            <li><span class="carta__name">Ceviche Piurano</span><span class="carta__dots"></span><span class="carta__price">$18.900</span></li>
+            <li><span class="carta__name">Causa Acevichado</span><span class="carta__dots"></span><span class="carta__price">$10.900</span></li>
+            <li><span class="carta__name">Chicharrón de Pescado</span><span class="carta__dots"></span><span class="carta__price">$14.500</span></li>
+          </ul>
+        </div>
+        <div class="carta__col">
+          <h3 class="carta__col-title">Especialidades de la Casa</h3>
+          <ul class="carta__list">
+            <li><span class="carta__name">Camarones Costas de Máncora</span><span class="carta__dots"></span><span class="carta__price">$17.900</span></li>
+            <li><span class="carta__name">Risotto al Wock</span><span class="carta__dots"></span><span class="carta__price">$19.900</span></li>
+            <li><span class="carta__name">Pachamanca del Inka</span><span class="carta__dots"></span><span class="carta__price">$23.900</span></li>
+            <li><span class="carta__name">Lomo Saltado</span><span class="carta__dots"></span><span class="carta__price">$19.900</span></li>
+            <li><span class="carta__name">Ají de Gallina</span><span class="carta__dots"></span><span class="carta__price">$15.900</span></li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn btn--outline btn--light" href="menus/carta-comida.pdf" target="_blank" rel="noopener">Ver carta completa de comida (PDF) →</a>
+    </div>
+
+    <div class="carta__panel" data-panel="bebidas">
+      <div class="carta__grid">
+        <div class="carta__col">
+          <h3 class="carta__col-title">Pisco Sour &amp; Chilcanos</h3>
+          <ul class="carta__list">
+            <li><span class="carta__name">Pisco Sour Clásico</span><span class="carta__dots"></span><span class="carta__price">$5.900</span></li>
+            <li><span class="carta__name">Sour Macerado de Maracuyá</span><span class="carta__dots"></span><span class="carta__price">$6.500</span></li>
+            <li><span class="carta__name">Chilcano Tabernero Clásico</span><span class="carta__dots"></span><span class="carta__price">$5.900</span></li>
+            <li><span class="carta__name">Algarrobina</span><span class="carta__dots"></span><span class="carta__price">$6.200</span></li>
+          </ul>
+        </div>
+        <div class="carta__col">
+          <h3 class="carta__col-title">Cocteles, Vinos &amp; Cervezas</h3>
+          <ul class="carta__list">
+            <li><span class="carta__name">Seductor</span><span class="carta__dots"></span><span class="carta__price">$7.200</span></li>
+            <li><span class="carta__name">Mojito Corona</span><span class="carta__dots"></span><span class="carta__price">$8.500</span></li>
+            <li><span class="carta__name">Vino por Copa</span><span class="carta__dots"></span><span class="carta__price">$4.500</span></li>
+            <li><span class="carta__name">Cusqueña Rubia</span><span class="carta__dots"></span><span class="carta__price">$3.700</span></li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn btn--outline btn--light" href="menus/carta-bebidas.pdf" target="_blank" rel="noopener">Ver carta completa de bebidas (PDF) →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLATOS DESTACADOS ===== -->
+<section class="platos" id="platos">
+  <div class="container">
+    <div class="section__head">
+      <p class="section__eyebrow">Nuestro trabajo</p>
+      <h2 class="section__title">Platos que hablan por sí solos</h2>
+      <p class="section__subtitle">Una muestra real de lo que sale de nuestra cocina.</p>
+    </div>
+    <div class="platos__grid">
+      <figure class="plato">
+        <img src="images/platos/plato-1.png" alt="Salteado de camarones y filete con crema de choclo" loading="lazy">
+        <figcaption>Salteado de camarones y filete, con crema de choclo</figcaption>
+      </figure>
+      <figure class="plato">
+        <img src="images/platos/plato-2.png" alt="Piqueo frío de mariscos" loading="lazy">
+        <figcaption>Piqueo frío de mariscos, ideal para compartir</figcaption>
+      </figure>
+      <figure class="plato">
+        <img src="images/platos/plato-3.png" alt="Causa limeña" loading="lazy">
+        <figcaption>Causa limeña, tradición en cada capa</figcaption>
+      </figure>
+      <figure class="plato">
+        <img src="images/platos/plato-4.png" alt="Ceviche estilo Máncora" loading="lazy">
+        <figcaption>Ceviche estilo Máncora, fresco y con carácter</figcaption>
+      </figure>
+      <figure class="plato plato--wide">
+        <img src="images/platos/plato-5.png" alt="Pasta a los mariscos" loading="lazy">
+        <figcaption>Pasta a los mariscos, fusión con sazón peruana</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UBICACION ===== -->
+<section class="location" id="ubicacion">
+  <div class="container location__inner">
+    <div class="location__info">
+      <p class="section__eyebrow">Visítanos</p>
+      <h2 class="section__title">Ubicación y horarios</h2>
+      <ul class="info__list">
+        <li>
+          <span class="icon">📍</span>
+          <div>
+            <strong>Dirección</strong>
+            <p>Av. Vicuña Mackenna 5343, San Joaquín, Región Metropolitana</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🕒</span>
+          <div>
+            <strong>Horarios</strong>
+            <p>Lunes a sábado: 12:00 – 00:00<br>Domingo: 12:00 – 20:00</p>
+          </div>
+        </li>
+      </ul>
+      <a class="btn btn--outline-dark" href="https://www.google.com/maps/place/COSTAS+DE+M%C3%80NCORA+SAN+JOAQU%C3%8DN+CHILE/@-33.5055235,-70.6174171,17z/data=!3m1!4b1!4m6!3m5!1s0x9662d171a56185eb:0x7e54de2e7f0772de!8m2!3d-33.5055235!4d-70.6148475!16s%2Fg%2F11r89vzc68" target="_blank" rel="noopener">Cómo llegar →</a>
+    </div>
+    <div class="location__map">
+      <iframe
+        title="Mapa Costas de Máncora, Av. Vicuña Mackenna 5343, San Joaquín"
+        src="https://www.google.com/maps?q=Av.+Vicu%C3%B1a+Mackenna+5343,+San+Joaqu%C3%ADn&ll=-33.5055235,-70.6148475&z=18&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="section__head section__head--light">
+      <p class="section__eyebrow">Hablemos</p>
+      <h2 class="section__title">Contacto</h2>
+    </div>
+    <div class="contact__grid">
+      <a class="contact__card" href="mailto:contacto@costasdemancora.cl">
+        <span class="contact__icon">✉️</span>
+        <strong>Correo</strong>
+        <span>contacto@costasdemancora.cl</span>
+      </a>
+      <a class="contact__card" href="tel:+56958819204">
+        <span class="contact__icon">📞</span>
+        <strong>Teléfono / WhatsApp</strong>
+        <span>+56 9 5881 9204</span>
+      </a>
+      <a class="contact__card" href="https://www.instagram.com/costas_de_mancora/" target="_blank" rel="noopener">
+        <span class="contact__icon">📷</span>
+        <strong>Instagram</strong>
+        <span>@costas_de_mancora</span>
+      </a>
+      <a class="contact__card" href="https://www.facebook.com/people/Costas-De-Mancora/100053476695168/" target="_blank" rel="noopener">
+        <span class="contact__icon">👍</span>
+        <strong>Facebook</strong>
+        <span>Costas De Máncora</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRABAJA CON NOSOTROS ===== -->
+<section class="join">
+  <div class="container join__inner">
+    <div>
+      <p class="section__eyebrow">Únete al equipo</p>
+      <h2 class="section__title">Trabaja con nosotros</h2>
+      <p class="join__text">¿Te apasiona la cocina y el buen servicio? Súmate al equipo de Costas de Máncora.</p>
+    </div>
+    <a class="btn btn--whatsapp" href="https://wa.me/56958819204?text=Hola%2C%20me%20gustar%C3%ADa%20postular%20a%20trabajar%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener">💬 Postula por WhatsApp</a>
+  </div>
+</section>
+
+<!-- ===== RESERVAR / CONTACTANOS FORMAL ===== -->
+<section class="reservations" id="reservar">
+  <div class="container reservations__inner">
+    <div class="reservations__text">
+      <p class="section__eyebrow">Reservas y eventos</p>
+      <h2 class="section__title">Contáctanos</h2>
+      <p>Para reservas, celebraciones o consultas corporativas, escríbenos y te responderemos a la brevedad.</p>
+      <a class="btn btn--whatsapp" href="https://wa.me/56958819204?text=Hola%2C%20quisiera%20reservar%20una%20mesa%20en%20Costas%20de%20M%C3%A1ncora" target="_blank" rel="noopener">💬 Reservar por WhatsApp</a>
+    </div>
+
+    <form class="reservation-form" id="reservationForm">
+      <div class="form__row">
+        <label>Nombre completo
+          <input type="text" name="nombre" required placeholder="Tu nombre">
+        </label>
+        <label>Correo electrónico
+          <input type="email" name="correo" required placeholder="tu@correo.cl">
+        </label>
+      </div>
+      <div class="form__row">
+        <label>Fecha
+          <input type="date" name="fecha" required>
+        </label>
+        <label>Hora
+          <input type="time" name="hora" required>
+        </label>
+        <label>N° de personas
+          <input type="number" name="personas" min="1" max="60" required placeholder="2">
+        </label>
+      </div>
+      <label>Mensaje
+        <textarea name="comentario" rows="3" placeholder="Eventos corporativos, celebraciones, alergias, etc."></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary btn--full">Enviar solicitud</button>
+      <p class="form__hint" id="formHint"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== INFORMACION EXTRA ===== -->
+<section class="extra">
+  <div class="container extra__inner">
+    <div class="extra__item">
+      <span class="extra__icon">💳</span>
+      <p>Aceptamos <strong>Pluxee</strong> para empresas</p>
+    </div>
+    <div class="extra__item">
+      <span class="extra__icon">💳</span>
+      <p>Tarjetas de crédito y débito</p>
+    </div>
+    <div class="extra__item">
+      <span class="extra__icon">🛵</span>
+      <p>Pedidos y reservas por WhatsApp</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="images/logo.png" alt="Costas de Máncora" class="footer__mark">
+      <img src="images/nombre.png" alt="Costas de Máncora" class="footer__word">
+      <p>Gastronomía peruana en San Joaquín, Santiago.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navegación</h4>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#carta">Carta</a>
+      <a href="#platos">Platos</a>
+      <a href="#ubicacion">Ubicación</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <a href="tel:+56958819204">+56 9 5881 9204</a>
+      <a href="mailto:contacto@costasdemancora.cl">contacto@costasdemancora.cl</a>
+      <a href="#ubicacion">Av. Vicuña Mackenna 5343, San Joaquín</a>
+    </div>
+    <div class="footer__col">
+      <h4>Síguenos</h4>
+      <a href="https://www.instagram.com/costas_de_mancora/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/people/Costas-De-Mancora/100053476695168/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.tiktok.com/@costas_de_mancora" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Costas de Máncora. Todos los derechos reservados.</p>
+    <p class="footer__credits">Fotografías de la costa peruana: Wikimedia Commons (CC0 / CC BY-SA) — ver créditos en el README del repositorio.</p>
+  </div>
+</footer>
+
+<!-- ===== BOTONES FLOTANTES ===== -->
+<div class="floating-buttons">
+  <a href="https://wa.me/56958819204" target="_blank" rel="noopener" class="floating-btn floating-btn--whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.82 8.82 0 0 0-8.8 8.8c0 1.55.4 3.06 1.17 4.4L3.2 21.5l4.42-1.16a8.9 8.9 0 0 0 4.42 1.13h.01a8.82 8.82 0 0 0 8.8-8.8c0-2.35-.92-4.56-2.25-6.35Zm-5.55 13.55h-.01a7.35 7.35 0 0 1-3.75-1.03l-.27-.16-2.79.73.75-2.72-.18-.28a7.33 7.33 0 0 1-1.13-3.91 7.35 7.35 0 0 1 7.35-7.35c1.96 0 3.8.77 5.19 2.15a7.3 7.3 0 0 1 2.15 5.19 7.35 7.35 0 0 1-7.31 7.38Zm4.03-5.5c-.22-.11-1.3-.64-1.5-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.06-.22-.11-.93-.34-1.77-1.09-.65-.58-1.1-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.78.76-.78 1.85s.8 2.15.91 2.3c.11.15 1.57 2.4 3.8 3.36.53.23.94.36 1.27.47.53.17 1.01.14 1.4.09.43-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.05-.09-.2-.15-.42-.26Z"/></svg>
+  </a>
+  <a href="https://www.instagram.com/costas_de_mancora/" target="_blank" rel="noopener" class="floating-btn floating-btn--instagram" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.55.22.95.47 1.37.89.42.42.67.82.89 1.37.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.55-.47.95-.89 1.37-.42.42-.82.67-1.37.89-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.68 3.68 0 0 1-1.37-.89 3.68 3.68 0 0 1-.89-1.37c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.55.47-.95.89-1.37.42-.42.82-.67 1.37-.89.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56a5.85 5.85 0 0 0-2.11 1.38A5.85 5.85 0 0 0 .65 4.12c-.3.76-.5 1.63-.56 2.91C.03 8.31.02 8.72.02 12s.01 3.69.07 4.97c.06 1.28.26 2.15.56 2.91.32.79.75 1.46 1.38 2.11.65.63 1.32 1.06 2.11 1.38.76.3 1.63.5 2.91.56 1.28.06 1.69.07 4.97.07s3.69-.01 4.97-.07c1.28-.06 2.15-.26 2.91-.56a5.85 5.85 0 0 0 2.11-1.38 5.85 5.85 0 0 0 1.38-2.11c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.97s-.01-3.69-.07-4.97c-.06-1.28-.26-2.15-.56-2.91a5.85 5.85 0 0 0-1.38-2.11A5.85 5.85 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+  </a>
+  <a href="https://www.tiktok.com/@costas_de_mancora" target="_blank" rel="noopener" class="floating-btn floating-btn--tiktok" aria-label="TikTok">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-3.03-4.03h-3.1v13.94a2.6 2.6 0 1 1-2.6-2.6 2.6 2.6 0 0 1 .55.06V9.98a5.66 5.66 0 0 0-.55-.03 5.7 5.7 0 1 0 5.7 5.7V8.4a7.35 7.35 0 0 0 4.03 1.2V6.5a4.27 4.27 0 0 1-1-.68Z"/></svg>
+  </a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
