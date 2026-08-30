@@ -1,6 +1,6 @@
 # Costas de Máncora
 
-Landing page de **Costas de Máncora**, restaurante peruano real en Av. Vicuña Mackenna 5343, San Joaquín, Santiago (📞 [+56 9 5881 9204](tel:+56958819204) · [@costas_de_mancora](https://www.instagram.com/costas_de_mancora/) en Instagram).
+Landing page de **Costas de Máncora**, restaurante peruano real en Av. Vicuña Mackenna 5343, San Joaquín, Santiago (📞 [+56 2 2459 5498](tel:+56224595498) · 💬 [+56 9 5881 9204](https://wa.me/56958819204) WhatsApp · [@costas_de_mancora](https://www.instagram.com/costas_de_mancora/) en Instagram).
 
 Diseño inspirado en [pescadoscapitales.cl](https://pescadoscapitales.cl/) (hero deslizante con fotografía + frases, secciones de Nosotros / Carta / Ubicación / Contacto), pero con identidad propia: logo, tipografía y colores reales del local (azul océano + dorado), y estructura ampliada según lo pedido por el local.
 
@@ -24,6 +24,7 @@ Diseño inspirado en [pescadoscapitales.cl](https://pescadoscapitales.cl/) (hero
 
 - El local no ofrece reserva de mesas: todos los botones "Reservar" se reemplazaron por "Escríbenos" (WhatsApp) o por el formulario de consultas/eventos.
 - Correo real: `Costasdemancora@gmail.com`. TikTok real: `https://www.tiktok.com/@costasdemancora`.
+- El sitio distingue dos números: **Teléfono** `+56 2 2459 5498` (llamada, `tel:`) y **WhatsApp** `+56 9 5881 9204` (chat, `wa.me`) — ambos tal como figuran en la carta impresa del local.
 
 ## Publicar con GitHub Pages
 
