@@ -84,7 +84,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 .nav__toggle span { display: block; width: 100%; height: 2px; background: var(--ink); }
 
 /* ===== Hero slider ===== */
-.hero { position: relative; height: 100vh; min-height: 620px; overflow: hidden; background: var(--ink); margin-top: 68px; }
+.hero { position: relative; height: 68vh; min-height: 460px; max-height: 640px; overflow: hidden; background: var(--ink); margin-top: 68px; }
 .hero__slides { position: relative; width: 100%; height: 100%; background: var(--ink); }
 .hero__slide {
   position: absolute; inset: 0;
@@ -171,7 +171,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 .carta__price { color: var(--gold); font-weight: 600; white-space: nowrap; }
 
 /* ===== Location ===== */
-.location { padding: 110px 0; background: var(--white); }
+.location { padding: 110px 0; background: var(--white); position: relative; overflow: hidden; }
 .location__inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: start; }
 .info__list { margin: 26px 0 30px; display: grid; gap: 20px; }
 .info__list li { display: flex; gap: 14px; align-items: flex-start; }
@@ -202,7 +202,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 .join__text { color: var(--ink-soft); max-width: 480px; }
 
 /* ===== Reservas / contáctanos formal ===== */
-.reservations { padding: 110px 0; background: var(--paper); color: var(--ink); border-top: 1px solid var(--line); }
+.reservations { padding: 110px 0; background: var(--paper); color: var(--ink); border-top: 1px solid var(--line); position: relative; overflow: hidden; }
 .reservations__inner { display: grid; grid-template-columns: 0.8fr 1fr; gap: 56px; align-items: center; }
 .reservations .section__title { color: var(--ink); }
 .reservations__text p { color: var(--ink-soft); margin-bottom: 22px; }
@@ -258,6 +258,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 .decor--shell-1 { right: -18px; bottom: 24px; width: 190px; height: 118px; }
 .decor--shell-2 { top: -16px; left: -14px; width: 160px; height: 100px; transform: rotate(180deg); }
 .decor--wave { top: 50%; left: 50%; width: 420px; height: 30px; transform: translate(-50%,-50%); opacity: 0.5; }
+.decor--crab { top: -20px; right: 40px; width: 170px; height: 102px; transform: rotate(-6deg); color: var(--gold); opacity: 0.28; }
+.decor--shrimp { bottom: -18px; left: -20px; width: 180px; height: 108px; transform: rotate(8deg); }
+.decor--octopus { top: 30px; right: -26px; width: 170px; height: 120px; transform: rotate(6deg); color: var(--gold); opacity: 0.28; }
 
 /* ===== Reveal ===== */
 [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -293,7 +296,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; color: var(
 
 @media (max-width: 640px) {
   .decor { display: none; }
-  .hero { min-height: 560px; }
+  .hero { height: 62vh; min-height: 420px; max-height: none; }
   .hero__slide { padding-bottom: 40px; }
   .hero__card { max-width: none; padding: 28px 24px 26px; }
   .hero__arrow { width: 40px; height: 40px; font-size: 1.2rem; top: 38%; }
