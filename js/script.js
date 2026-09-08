@@ -67,7 +67,7 @@ if (slides.length) {
 
 // ===== Reveal on scroll =====
 const revealTargets = document.querySelectorAll(
-  '.about__content, .about__media, .carta__panel, .plato, .location__info, .location__map, .contact__card, .reservation-form, .reservations__text'
+  '.about__content, .about__media, .carta__panel, .location__info, .location__map, .contact__card, .reservation-form, .reservations__text'
 );
 revealTargets.forEach(el => el.setAttribute('data-reveal', ''));
 const revealObserver = new IntersectionObserver((entries) => {

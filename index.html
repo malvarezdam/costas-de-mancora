@@ -10,16 +10,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=10">
+<link rel="stylesheet" href="css/styles.css?v=11">
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
 <header class="header" id="header">
   <div class="container header__inner">
-    <a href="#inicio" class="brand" aria-label="Costas de Máncora — Inicio">
+    <a href="#inicio" class="brand">
       <img src="images/logo.png" alt="" class="brand__mark">
-      <span class="brand__word" role="img" aria-label="Costas de Máncora"></span>
+      <img src="images/nombre.png" alt="Costas de Máncora" class="brand__word">
     </a>
 
     <nav class="nav" id="nav">
@@ -44,38 +44,41 @@
 <section class="hero" id="inicio">
   <div class="hero__slides" id="heroSlides">
     <div class="hero__slide is-active" style="background-image:url('images/costa/mancora-atardecer.jpg')">
-      <div class="hero__scrim"></div>
       <div class="container hero__content">
-        <p class="hero__eyebrow">Bienvenidos a Costas de Máncora</p>
-        <h1 class="hero__title">El sabor cálido<br>del norte peruano</h1>
-        <p class="hero__subtitle">Recetas tradicionales del Perú, servidas con la calidez de siempre, en el corazón de San Joaquín.</p>
-        <div class="hero__actions">
-          <a href="#contacto" class="btn btn--primary">Escríbenos</a>
-          <a href="#carta" class="btn btn--outline">Ver la carta</a>
+        <div class="hero__card">
+          <p class="hero__eyebrow">Bienvenidos a Costas de Máncora</p>
+          <h1 class="hero__title">El sabor cálido<br>del norte peruano</h1>
+          <p class="hero__subtitle">Recetas tradicionales del Perú, servidas con la calidez de siempre, en el corazón de San Joaquín.</p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Escríbenos</a>
+            <a href="#carta" class="btn btn--outline-dark">Ver la carta</a>
+          </div>
         </div>
       </div>
     </div>
     <div class="hero__slide" style="background-image:url('images/costa/mancora-costa.jpg')">
-      <div class="hero__scrim"></div>
       <div class="container hero__content">
-        <p class="hero__eyebrow">Cocina de autor</p>
-        <h1 class="hero__title">Elegancia<br>con sazón de mar</h1>
-        <p class="hero__subtitle">Ingredientes frescos y una cocina cuidada que honra cada receta de la costa peruana.</p>
-        <div class="hero__actions">
-          <a href="#contacto" class="btn btn--primary">Escríbenos</a>
-          <a href="#ubicacion" class="btn btn--outline">Ubícanos</a>
+        <div class="hero__card">
+          <p class="hero__eyebrow">Cocina de autor</p>
+          <h1 class="hero__title">Elegancia<br>con sazón de mar</h1>
+          <p class="hero__subtitle">Ingredientes frescos y una cocina cuidada que honra cada receta de la costa peruana.</p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Escríbenos</a>
+            <a href="#ubicacion" class="btn btn--outline-dark">Ubícanos</a>
+          </div>
         </div>
       </div>
     </div>
     <div class="hero__slide" style="background-image:url('images/costa/mancora-botes.jpg')">
-      <div class="hero__scrim"></div>
       <div class="container hero__content">
-        <p class="hero__eyebrow">Desde la caleta hasta tu mesa</p>
-        <h1 class="hero__title">Tradición que se<br>sirve con orgullo</h1>
-        <p class="hero__subtitle">La misma pasión de siempre por la buena comida, con productos frescos y sazón auténtica.</p>
-        <div class="hero__actions">
-          <a href="#contacto" class="btn btn--primary">Escríbenos</a>
-          <a href="#nosotros" class="btn btn--outline">Conócenos</a>
+        <div class="hero__card">
+          <p class="hero__eyebrow">Desde la caleta hasta tu mesa</p>
+          <h1 class="hero__title">Tradición que se<br>sirve con orgullo</h1>
+          <p class="hero__subtitle">La misma pasión de siempre por la buena comida, con productos frescos y sazón auténtica.</p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Escríbenos</a>
+            <a href="#nosotros" class="btn btn--outline-dark">Conócenos</a>
+          </div>
         </div>
       </div>
     </div>
@@ -130,7 +133,7 @@
     <svg viewBox="0 0 100 60"><path d="M50 8C25 8 8 32 8 55h84C92 32 75 8 50 8Z"/><path d="M50 8L18 55M50 8L34 55M50 8L50 55M50 8L66 55M50 8L82 55"/></svg>
   </span>
   <div class="container">
-    <div class="section__head section__head--light">
+    <div class="section__head">
       <p class="section__eyebrow">Nuestra carta</p>
       <h2 class="section__title">Sabores de nuestra costa</h2>
       <p class="section__subtitle">Una muestra de lo que preparamos cada día. Descarga la carta completa para ver todas las opciones.</p>
@@ -164,7 +167,7 @@
           </ul>
         </div>
       </div>
-      <a class="btn btn--outline btn--light" href="menus/carta-comida.pdf" target="_blank" rel="noopener">Ver carta completa de comida (PDF) →</a>
+      <a class="btn--text" href="menus/carta-comida.pdf" target="_blank" rel="noopener">Ver carta completa de comida (PDF) →</a>
     </div>
 
     <div class="carta__panel" data-panel="bebidas">
@@ -188,7 +191,7 @@
           </ul>
         </div>
       </div>
-      <a class="btn btn--outline btn--light" href="menus/carta-bebidas.pdf" target="_blank" rel="noopener">Ver carta completa de bebidas (PDF) →</a>
+      <a class="btn--text" href="menus/carta-bebidas.pdf" target="_blank" rel="noopener">Ver carta completa de bebidas (PDF) →</a>
     </div>
   </div>
 </section>
@@ -234,7 +237,7 @@
     <svg viewBox="0 0 100 60"><path d="M50 8C25 8 8 32 8 55h84C92 32 75 8 50 8Z"/><path d="M50 8L18 55M50 8L34 55M50 8L50 55M50 8L66 55M50 8L82 55"/></svg>
   </span>
   <div class="container">
-    <div class="section__head section__head--light">
+    <div class="section__head">
       <p class="section__eyebrow">Hablemos</p>
       <h2 class="section__title">Contacto</h2>
     </div>
@@ -260,6 +263,9 @@
 
 <!-- ===== TRABAJA CON NOSOTROS ===== -->
 <section class="join">
+  <span class="decor decor--wave" aria-hidden="true">
+    <svg viewBox="0 0 200 40"><path d="M0 20c8-10 17-10 25 0s17 10 25 0 17-10 25 0 17 10 25 0 17-10 25 0 17 10 25 0 17-10 25 0 17 10 25 0"/></svg>
+  </span>
   <div class="container join__inner">
     <div>
       <p class="section__eyebrow">Únete al equipo</p>
@@ -323,7 +329,7 @@
   <div class="container footer__inner">
     <div class="footer__brand">
       <img src="images/logo.png" alt="" class="footer__mark">
-      <span class="footer__word" role="img" aria-label="Costas de Máncora"></span>
+      <img src="images/nombre.png" alt="Costas de Máncora" class="footer__word">
       <p>Gastronomía peruana en San Joaquín, Santiago.</p>
     </div>
     <div class="footer__col">
