@@ -10,8 +10,7 @@ Diseño inspirado en [pescadoscapitales.cl](https://pescadoscapitales.cl/) (hero
 - `css/styles.css` — Estilos y diseño responsive.
 - `js/script.js` — Slider del hero, tabs de la carta, menú móvil, scroll reveal y formulario de contacto por WhatsApp.
 - `images/logo.png`, `images/nombre.png` — Logo y wordmark **reales** del local (provistos por el local).
-- `images/platos/` — **Fotografías reales** de platos del local (provistas por el local).
-- `images/costa/` — Fotografías simbólicas de la costa peruana (Máncora), de dominio público / CC0 (sin copyright, no requieren atribución).
+- `images/costa/` — Fotografías simbólicas de playa (costa peruana y una con palmeras), de dominio público / CC0 (sin copyright, no requieren atribución). Por pedido del local, la página ya no muestra fotos de platos.
 - `menus/carta-comida.pdf`, `menus/carta-bebidas.pdf` — Cartas **reales y completas** del local, enlazadas desde la sección "Carta" (igual que el "Carta Salón" de la página de referencia).
 
 ## Fuentes de la información
