@@ -35,6 +35,8 @@ sections.forEach(section => sectionObserver.observe(section));
 const heroSlides = document.getElementById('heroSlides');
 const slides = document.querySelectorAll('.hero__slide');
 const dots = document.querySelectorAll('.hero__dot');
+const heroPrev = document.getElementById('heroPrev');
+const heroNext = document.getElementById('heroNext');
 let currentSlide = 0;
 let slideTimer;
 
@@ -59,6 +61,9 @@ if (slides.length) {
     goToSlide(Number(dot.dataset.slide));
     startAutoplay();
   }));
+
+  if (heroPrev) heroPrev.addEventListener('click', () => { prevSlide(); startAutoplay(); });
+  if (heroNext) heroNext.addEventListener('click', () => { nextSlide(); startAutoplay(); });
 
   // Deslizar con el dedo (móvil) o el mouse
   let dragStartX = null;
