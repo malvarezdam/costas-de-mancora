@@ -65,39 +65,26 @@ if (slides.length) {
   if (heroPrev) heroPrev.addEventListener('click', () => { prevSlide(); startAutoplay(); });
   if (heroNext) heroNext.addEventListener('click', () => { nextSlide(); startAutoplay(); });
 
-  // Deslizar con el dedo (móvil) o el mouse
-  let dragStartX = null;
-  let dragStartY = null;
+  // Deslizar con el dedo (solo en pantallas táctiles; en computador se usan las flechas)
+  let touchStartX = null;
+  let touchStartY = null;
   const SWIPE_THRESHOLD = 45;
 
-  const onDragStart = (x, y) => { dragStartX = x; dragStartY = y; };
-  const onDragEnd = (x, y) => {
-    if (dragStartX === null) return;
-    const dx = x - dragStartX;
-    const dy = y - dragStartY;
+  heroSlides.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].clientX;
+    touchStartY = e.changedTouches[0].clientY;
+  }, { passive: true });
+  heroSlides.addEventListener('touchend', (e) => {
+    if (touchStartX === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
     if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
       if (dx < 0) nextSlide(); else prevSlide();
       startAutoplay();
     }
-    dragStartX = null;
-    dragStartY = null;
-  };
-
-  heroSlides.addEventListener('touchstart', (e) => {
-    onDragStart(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+    touchStartX = null;
+    touchStartY = null;
   }, { passive: true });
-  heroSlides.addEventListener('touchend', (e) => {
-    onDragEnd(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
-  }, { passive: true });
-
-  heroSlides.addEventListener('pointerdown', (e) => {
-    if (e.pointerType !== 'mouse' || e.button !== 0) return;
-    onDragStart(e.clientX, e.clientY);
-  });
-  heroSlides.addEventListener('pointerup', (e) => {
-    if (e.pointerType !== 'mouse') return;
-    onDragEnd(e.clientX, e.clientY);
-  });
 
   startAutoplay();
 }
